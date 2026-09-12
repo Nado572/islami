@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return isSelected ? Container(
       padding: EdgeInsets.symmetric(horizontal: 20,vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.5),
+        color: Colors.black.withAlpha(122),
         borderRadius: BorderRadius.circular(66),
       ),
 
