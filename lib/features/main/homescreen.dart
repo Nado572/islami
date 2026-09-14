@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<Widget> tabs = [
-    QuranTab(),
+     QuranTab(),
     HadithTab(),
     RadioTab(),
     SebhaTab(),
@@ -41,12 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         });
       },
-      backgroundColor: ColorManager.gold,
-      type: BottomNavigationBarType.fixed,
-      selectedItemColor: ColorManager.white,
-      unselectedItemColor: ColorManager.black,
-      showSelectedLabels: true,
-      showUnselectedLabels: false,
+
       items: [
         BottomNavigationBarItem(
           icon: _buildic(icon: IconAssets.quran,isSelected: selctedindex==0),

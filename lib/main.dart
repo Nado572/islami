@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islamy/configaration/theme/thememanager.dart';
 import 'package:islamy/core/routesmanager.dart';
 
 void main() {
@@ -10,6 +11,8 @@ class Islami extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeManager.light,
+      darkTheme: ThemeManager.dark,
       routes: RoutesManager.routes,
       initialRoute: RoutesManager.home,
     );
